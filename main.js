@@ -30,6 +30,9 @@ function startTimer(duration, display) {
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
         display.textContent = minutes + ":" + seconds;
+        if(seconds == "00"){
+            timeUp.play();
+        }
 
         if (--timer < 0) {
             timer = duration;

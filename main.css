@@ -1,0 +1,100 @@
+.background {
+    background: #443f3f;
+}
+
+.main {
+    margin-top: 50px;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.time {
+    padding-top: 50px;
+    padding-left: 15%;
+    padding-bottom: 50px;
+    font-size: 100px;
+    color: #00E487;
+}
+
+.scoreBox {
+    font-weight: 600;
+    background: blue;
+    color: white;
+    height: 100px;
+    width: 300px;
+    border-radius: 4%;
+    box-shadow: 1px;
+}
+
+.scoreText {
+    padding-top: 5px;
+    padding-left: 35%;
+}
+
+.score {
+    font-size: 40px;
+    color: rgb(83, 190, 73);
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.board {
+    margin-top: 75px;
+}
+
+.lose {
+    text-align: center;
+    font-weight: 800;
+    color: white;
+}
+
+.win {
+    font-weight: 800;
+    text-align: center;
+    color: white;
+}
+
+.img {
+    height: 20px;
+    width: 20px;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.button1 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.button2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.button3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.button4 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.button5 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.button6 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}

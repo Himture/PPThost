@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+  <title>PresentationApp</title>
+
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body class="background">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col main">
+        <iframe
+          src="https://onedrive.live.com/embed?cid=06B0A2C21F2ADB33&resid=6B0A2C21F2ADB33%212046&authkey=AE_Z6o55N94nqsU&em=2"
+          width="800" height="500" frameborder="0" scrolling="no"></iframe>
+      </div>
+
+      <div class="col actions">
+        <div class="row">
+          <form action="">
+            <input type="button" class="btn btn-lg btn-success button1" onclick="run(0.5)" value="30 sec"></input>
+            <input type="button" class="btn btn-lg btn-success button2" onclick="run(1.5)" value="1.5 mins"></input>
+            <input type="button" class="btn btn-lg btn-success button3" onclick="run(2)" value="2 mins"></input>
+            <input type="button" class="btn btn-lg btn-success button3" onclick="run(3)" value="3 mins"></button>
+            <input type="button" class="btn btn-lg btn-success button4" onclick="run(5)" value="5 mins"></input>
+            <input type="button" class="btn btn-lg btn-success button5" onclick="run(6)" value="6 mins"></input>
+            <input type="button" class="btn btn-lg btn-success button6" onclick="run(10)" value="10 mins"></input>
+          </form>
+        </div>
+
+
+        <div class="row time">
+          <span id="time">
+            00:00
+          </span>
+        </div>
+
+        <div class="row scoreBox">
+          <div class="scoreText">
+            TEAM SCORE
+            <br>
+            <main class="score">
+              0
+            </main>
+          </div>
+        </div>
+
+
+        <div class="row board">
+          <div class="col lose">
+            <input type='image' class='img' onclick="runAudio(1)" src="assets/wrong.png" alt=""></input>
+            -100
+          </div>
+          <div class="col win">
+            <input type='image' class='img' onclick='runAudio(2)' src="assets/tick.png" alt=""></input>
+            +100
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <script src="main.js"> </script>
+</body>
+
+</html>

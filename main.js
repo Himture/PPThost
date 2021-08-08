@@ -21,8 +21,10 @@ function startTimer(duration, display) {
     var timeUp = new Audio("./assets/time up.mp3");
     var timer = duration,
         minutes, seconds;
-    setInterval(function () {
+    var d = 0;
+    var a = setInterval(function () {
 
+        d = d + 1;
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
 
@@ -30,12 +32,18 @@ function startTimer(duration, display) {
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
         display.textContent = minutes + ":" + seconds;
-        if(seconds == "00"){
+        if (seconds == "00") {
             timeUp.play();
         }
 
+
         if (--timer < 0) {
             timer = duration;
+        }
+        console.log(d)
+        if (d == duration+1) {
+            console.log("i was here")
+            clearInterval(a)
         }
     }, 1000);
 }

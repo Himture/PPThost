@@ -20,24 +20,30 @@
 <body class="background">
 
   <div class="container">
+
     <div class="row">
 
       <div class="col main">
         <iframe
           src="https://onedrive.live.com/embed?cid=06B0A2C21F2ADB33&resid=6B0A2C21F2ADB33%212046&authkey=AE_Z6o55N94nqsU&em=2"
-          width="800" height="500" frameborder="0" scrolling="no"></iframe>
+          width="800" height="100%" frameborder="0" scrolling="no"></iframe>
       </div>
 
-      <div class="col actions">
+      <div class="col actions text-center">
         <div class="row">
           <form action="">
-            <input type="button" class="btn btn-lg btn-success button1" onclick="run(0.5)" value="30 sec"></input>
-            <input type="button" class="btn btn-lg btn-success button2" onclick="run(1.5)" value="1.5 mins"></input>
-            <input type="button" class="btn btn-lg btn-success button3" onclick="run(2)" value="2 mins"></input>
-            <input type="button" class="btn btn-lg btn-success button3" onclick="run(3)" value="3 mins"></button>
-            <input type="button" class="btn btn-lg btn-success button4" onclick="run(5)" value="5 mins"></input>
-            <input type="button" class="btn btn-lg btn-success button5" onclick="run(6)" value="6 mins"></input>
-            <input type="button" class="btn btn-lg btn-success button6" onclick="run(10)" value="10 mins"></input>
+            <input type="button" class="btn btn-sm btn-success button1" onclick="run(0.5)" value="30 sec"></input>
+            <input type="button" class="btn btn-sm btn-success button2" onclick="run(1.5)" value="1.5 mins"></input>
+            <input type="button" class="btn btn-sm btn-success button3" onclick="run(2)" value="2 mins"></input>
+          </form>
+        </div>
+
+        <div class="row">
+          <form action="">
+            <input type="button" class="btn btn-sm btn-success button3" onclick="run(3)" value="3 mins"></button>
+            <input type="button" class="btn btn-sm btn-success button4" onclick="run(5)" value="5 mins"></input>
+            <input type="button" class="btn btn-sm btn-success button5" onclick="run(6)" value="6 mins"></input>
+            <input type="button" class="btn btn-sm btn-success button6" onclick="run(10)" value="10 mins"></input>
           </form>
         </div>
 
@@ -62,18 +68,16 @@
         <div class="row board">
           <div class="col lose">
             <input type='image' class='img' onclick="runAudio(1)" src="assets/wrong.png" alt=""></input>
-            -100
           </div>
           <div class="col win">
             <input type='image' class='img' onclick='runAudio(2)' src="assets/tick.png" alt=""></input>
-            +100
           </div>
         </div>
 
-
       </div>
     </div>
-    <script src="main.js"> </script>
+  </div>
+  <script src="main.js"> </script>
 </body>
 
 </html>

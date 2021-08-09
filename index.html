@@ -25,41 +25,43 @@
       <div class="col main">
         <iframe
           src="https://onedrive.live.com/embed?cid=06B0A2C21F2ADB33&resid=6B0A2C21F2ADB33%212046&authkey=AE_Z6o55N94nqsU&em=2"
-          width="1000" height="780" frameborder="0" scrolling="no"></iframe>
+          width="950" height="770" frameborder="0" scrolling="no"></iframe>
       </div>
 
       <div class="col actions">
           <form action="">
             <div class="row">
-              <input type="button" class="btn btn-lg btn-success button1 col-lg-3 col-md-4 col-sm-6" onclick="run(0.5)" value="30 sec"></input>
-              <input type="button" class="btn btn-lg btn-success button2 col-lg-3 col-md-4 col-sm-6" onclick="run(1.5)" value="1.5 mins"></input>
-              <input type="button" class="btn btn-lg btn-success button3 col-lg-3 col-md-4 col-sm-6" onclick="run(2)" value="2 mins"></input>
+              <input type="button" class="btn btn-sm btn-success button1 col" onclick="run(0.5)" value="30 sec"></input>
+              <input type="button" class="btn btn-sm btn-success button2 col" onclick="run(1.5)" value="1.5 mins"></input>
+              <input type="button" class="btn btn-sm btn-success button3 col" onclick="run(2)" value="2 mins"></input>
             </div>
             <div class="row">
-              <input type="button" class="btn btn-lg btn-success button3 col-lg-3 col-md-4 col-sm-6" onclick="run(3)" value="3 mins"></button>
-              <input type="button" class="btn btn-lg btn-success button4 col-lg-3 col-md-4 col-sm-6" onclick="run(5)" value="5 mins"></input>
-              <input type="button" class="btn btn-lg btn-success button5 col-lg-3 col-md-4 col-sm-6" onclick="run(6)" value="6 mins"></input>
-            </div>
-            <div class="row">
-                <input type="button" class="btn btn-lg btn-success button6 col-lg-3 col-md-4 col-sm-6" onclick="run(10)" value="10 mins"></input>
+              <input type="button" class="btn btn-sm btn-success button3 col" onclick="run(3)" value="3 mins"></button>
+              <input type="button" class="btn btn-sm btn-success button4 col" onclick="run(5)" value="5 mins"></input>
+              <input type="button" class="btn btn-sm btn-success button5 col" onclick="run(6)" value="6 mins"></input>
+              <input type="button" class="btn btn-sm btn-success button6 col" onclick="run(10)" value="10 mins"></input>
             </div>
           </form>
 
 
-        <div class="row time">
-          <span id="time">
+        <div class="row time col-lg-12 col-md-12 col-sm-12" style="padding-top: 150px;">
+          <span id="time" style="padding-left: 20%;">
             00:00
           </span>
         </div>
 
-        <div class="row scoreBox">
-          <div class="scoreText">
-            TEAM SCORE
-            <br>
-            <main class="score">
-              0
-            </main>
-          </div>
+        <div class="row scoreBox col-lg-12 col-md-12">
+          <form action="" class="col-lg-12">
+            <div class="scoreText" style="padding-left: 37%;">
+              TEAM SCORE
+              <br>
+            </div>
+              <main class="score" style="padding-left: 45%;">
+                0
+              </main>
+          </form>
+          
+
         </div>
 
 

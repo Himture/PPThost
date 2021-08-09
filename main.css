@@ -1,9 +1,19 @@
+/* @media screen and (max-width: 1349 ){
+    .button6{
+        width: 200%;
+    }
+}  */
+
 .background {
     background: #443f3f;
 }
 
+.containers{
+    margin-left: 50px;
+}
+
 .main {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .actions {
@@ -72,21 +82,25 @@
 .button1 {
     margin-top: 20px;
     margin-bottom: 5px;
+    margin-right: 10px;
 }
 
 .button2 {
     margin-top: 20px;
     margin-bottom: 5px;
+    margin-right: 10px;
 }
 
 .button3 {
     margin-top: 20px;
     margin-bottom: 5px;
+    margin-right: 12px;
 }
 
 .button4 {
     margin-top: 20px;
     margin-bottom: 5px;
+    margin-right: 12px;
 }
 
 .button5 {
@@ -98,3 +112,4 @@
     margin-top: 20px;
     margin-bottom: 5px;
 }
+

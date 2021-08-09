@@ -2,8 +2,9 @@
     background: #443f3f;
 }
 
-.containers{
-    margin-left: 50px;
+.containers {
+    margin-left: 25px;
+    width: 95%;
 }
 
 .main {
@@ -37,7 +38,7 @@
 
 .score {
     font-size: 40px;
-    color: rgb(83, 190, 73); 
+    color: rgb(83, 190, 73);
 }
 
 .board {
@@ -104,4 +105,3 @@
     margin-bottom: 5px;
     margin-right: 5px;
 }
-

@@ -17,10 +17,10 @@ function runAudio(status) {
 
 }
 
-function startTimer(duration, display) {
+function startTimer(duration, display, t) {
     var timeUp = new Audio("./assets/time up.mp3");
     var timer = duration,
-        minutes, seconds;
+        minutes , seconds;
     var d = 0;
     var a = setInterval(function () {
 
@@ -32,16 +32,16 @@ function startTimer(duration, display) {
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
         display.textContent = minutes + ":" + seconds;
-        if (seconds == "00") {
+        if (seconds == "00" && d == duration+1) {
             timeUp.play();
         }
-
 
         if (--timer < 0) {
             timer = duration;
         }
+
         console.log(d)
-        if (d == duration+1) {
+        if (d == duration+1 ) {
             console.log("i was here")
             clearInterval(a)
         }
@@ -51,5 +51,5 @@ function startTimer(duration, display) {
 function run(time) {
     var fiveMinutes = 60 * time,
         display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
+    startTimer(fiveMinutes, display, 1);
 };

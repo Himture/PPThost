@@ -10,9 +10,8 @@ function runAudio(status) {
     }
     if (status == 2) {
         score = score + 100;
-        if (correct.paused) {
-            correct.play();
-        }
+        correct.play();
+
     }
 
     document.querySelectorAll("main")[0].innerText = score;

@@ -21,6 +21,7 @@
     padding-bottom: 50px;
     font-size: 100px;
     color: #00E487;
+    text-align: center;
 }
 
 .scoreBox {
@@ -31,15 +32,18 @@
     width: 300px;
     border-radius: 4%;
     box-shadow: 1px;
+    text-align: center;
 }
 
 .scoreText {
     padding-top: 5px;
+    text-align: center;
 }
 
 .score {
     font-size: 40px;
     color: rgb(83, 190, 73);
+    text-align: center;
 }
 
 .board {
@@ -102,6 +106,18 @@
 }
 
 .button6 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.button7 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.button8 {
     margin-top: 20px;
     margin-bottom: 5px;
     margin-right: 5px;

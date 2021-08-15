@@ -17,12 +17,15 @@ function runAudio(status) {
 
 }
 
+var a = setInterval();
+
 function startTimer(duration, display, t) {
     var timeUp = new Audio("./assets/time up.mp3");
     var timer = duration,
         minutes , seconds;
     var d = 0;
-    var a = setInterval(function () {
+
+    a = setInterval(function () {
 
         d = d + 1;
         minutes = parseInt(timer / 60, 10);
@@ -51,5 +54,6 @@ function startTimer(duration, display, t) {
 function run(time) {
     var fiveMinutes = 60 * time,
         display = document.querySelector('#time');
+    clearInterval(a)
     startTimer(fiveMinutes, display, 1);
 };

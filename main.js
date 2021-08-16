@@ -1,33 +1,52 @@
 var score = 0;
 
-function runAudio(status) {
-    var correct = new Audio("./assets/correct.mp3");
-    var wrong = new Audio("./assets/wrong.mp3");
+// Set flag to ensure
+let hasAudioStopped = true;
 
+// FUnction that updates if the audio has stopped.
+const setAudioStopCheck = () => {
+    hasAudioStopped = true;
+};
+
+var correct = new Audio("./assets/correct.mp3");
+var wrong = new Audio("./assets/wrong.mp3");
+
+function runAudio(status) {
     if (status == 1) {
         score = score - 100;
-        wrong.play();
+        // Check audio before playing to see if previous audio is playing.
+        if (hasAudioStopped) {
+            wrong.play();
+            hasAudioStopped = false;
+        }
     }
     if (status == 2) {
         score = score + 100;
-        correct.play();
 
+        // Check audio before playing to see if previous audio is playing.
+
+        if (hasAudioStopped) {
+            correct.play();
+            hasAudioStopped = false;
+        }
     }
 
     document.querySelectorAll("main")[0].innerText = score;
-
 }
+
+correct.addEventListener("ended", setAudioStopCheck);
+wrong.addEventListener("ended", setAudioStopCheck);
 
 var a = setInterval();
 
 function startTimer(duration, display, t) {
     var timeUp = new Audio("./assets/time up.mp3");
     var timer = duration,
-        minutes, seconds;
+        minutes,
+        seconds;
     var d = 0;
 
     a = setInterval(function () {
-
         d = d + 1;
         minutes = parseInt(timer / 60, 10);
         seconds = parseInt(timer % 60, 10);
@@ -44,16 +63,16 @@ function startTimer(duration, display, t) {
             timer = duration;
         }
 
-        console.log(d)
+        console.log(d);
         if (d == duration + 1) {
-            clearInterval(a)
+            clearInterval(a);
         }
     }, 1000);
 }
 
 function run(time) {
     var fiveMinutes = 60 * time,
-        display = document.querySelector('#time');
-    clearInterval(a)
+        display = document.querySelector("#time");
+    clearInterval(a);
     startTimer(fiveMinutes, display, 1);
-};
+}

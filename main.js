@@ -45,7 +45,7 @@ function startTimer(duration, display, t) {
         minutes,
         seconds;
     var d = 0;
-
+    
     a = setInterval(function () {
         d = d + 1;
         minutes = parseInt(timer / 60, 10);

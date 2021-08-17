@@ -76,27 +76,30 @@
     transform: translate(-50%, -50%);
 }
 
-.scobtn1{
+.scobtn1 {
     margin: 10px;
     margin-bottom: 1px;
     padding: 10px;
 }
 
-.scobtn2{
+.scobtn2 {
     margin: 10px;
     margin-bottom: 1px;
     padding: 10px;
 }
-.scobtn3{
+
+.scobtn3 {
     margin: 10px;
     margin-bottom: 1px;
     padding: 10px;
 }
-.scobtn4{
+
+.scobtn4 {
     margin: 10px;
     margin-bottom: 1px;
     padding: 10px;
 }
+
 .button1 {
     margin-top: 20px;
     margin-bottom: 3px;

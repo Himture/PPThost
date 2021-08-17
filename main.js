@@ -34,6 +34,14 @@ function runAudio(status) {
     document.querySelectorAll("main")[0].innerText = score;
 }
 
+let squares = document.getElementsByClassName('sco');
+
+Array.prototype.forEach.call(squares, (el) => {
+    el.addEventListener('click', (event) => {
+        el.classList.toggle('active');
+    })
+});
+
 correct.addEventListener("ended", setAudioStopCheck);
 wrong.addEventListener("ended", setAudioStopCheck);
 

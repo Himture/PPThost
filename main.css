@@ -76,28 +76,22 @@
     transform: translate(-50%, -50%);
 }
 
-.scobtn1 {
+.active {
+    background-color: grey !important;
+  }
+
+.sco {
     margin: 10px;
     margin-bottom: 1px;
     padding: 10px;
 }
 
-.scobtn2 {
-    margin: 10px;
-    margin-bottom: 1px;
-    padding: 10px;
+.sco:active{
+    background-color: grey;
 }
 
-.scobtn3 {
-    margin: 10px;
-    margin-bottom: 1px;
-    padding: 10px;
-}
-
-.scobtn4 {
-    margin: 10px;
-    margin-bottom: 1px;
-    padding: 10px;
+.mintxt{
+    font-size: small;
 }
 
 .button1 {
